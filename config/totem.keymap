@@ -107,19 +107,19 @@ label= "BASE"                              ;
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    TAB    ┃   SPACE   ┃    ESC    ┃   ┃   ENTER   ┃   BSPC    ┃     `     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷            ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U        &kp I       &kp O       &kp P
-                &hml LSHFT A   &hml LCTRL S   &hml LALT D   &hml LGUI F   &kp G         &kp H   &hmr RGUI J   &hmr RALT K   &hmr RCTRL L   &hmr RSHFT SEMI
-    &hml LSHFT GRAVE   &kp Z   &kp X   &kp C    &kp V   &kp B                       &kp N       &kp M        &kp COMMA   &kp DOT     &kp FSLH    &hmr RSHFT BSLH
-                                        &kp TAB     &lt SPACE   &hml LGUI ESC       &kp ENTER   &lt SYM BSPC   &kp BSPC
+                &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U        &kp I       &kp O       &kp P
+                &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J  &mt RCTRL K &mt RALT L  &mt RGUI SEMI
+    &kp GRAVE   &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M        &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+                                        &kp TAB     &kp SPACE   &kp ESC         &kp ENTER   &lt SYM BSPC &kp GRAVE
 
                         >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
