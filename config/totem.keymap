@@ -133,19 +133,19 @@ label= "MOV"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃           ┃           ┃           ┃           ┃   ┃    HOME   ┃   PG_DN   ┃   PG_UP   ┃    END    ┃  ZOOM IN  ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃  MV TAB ⬅ ┃ PREV TAB  ┃ NEXT TAB  ┃  MV TAB ⮕ ┃           ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃  ZOOM OUT ┃
+//             ┃  MV TAB ⬅ ┃ PREV TAB  ┃           ┃ NEXT TAB  ┃ MV TAB ⮕  ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃  ZOOM OUT ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃ PREV PAGE ┃           ┃ NEXT PAGE ┃           ┃   ┃   LINE ⬅  ┃   WORD ⬅  ┃  ⮕  WORD  ┃  ⮕  LINE  ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃ MV TAB ⬅  ┃  PREV TAB ┃   ┃  NEXT TAB ┃  MV TAB ⮕ ┃           ┃
+//                                     ┃           ┃ PREV TAB  ┃ MV TAB ⬅  ┃   ┃  MV TAB ⮕ ┃ NEXT TAB  ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷                  ╷                ╷                ╷                  ╷           ╷   ╷             ╷            ╷             ╷             ╷             ╷           ╷
 
                 &trans             &trans           &trans           &trans             &trans          &kp HOME      &kp PG_DN    &kp PG_UP     &kp END       &kp LG(EQUAL)
-                &kp LG(LS(PG_UP))  &kp LC(LS(TAB))  &kp LC(TAB)      &kp LG(LS(PG_DN))  &trans          &kp LEFT      &kp DOWN     &kp UP        &kp RIGHT     &kp LG(MINUS)
+                &kp LG(LS(PG_UP))  &kp LC(LS(TAB))  &trans           &kp LC(TAB)        &kp LG(LS(PG_DN))            &kp LEFT      &kp DOWN     &kp UP        &kp RIGHT     &kp LG(MINUS)
     &trans      &trans             &kp LG(LBKT)     &trans           &kp LG(RBKT)       &trans          &kp LG(LEFT)  &kp LA(LEFT) &kp LA(RIGHT) &kp LG(RIGHT) &trans        &trans
-                                                    &trans           &kp LC(LS(PG_UP))  &kp LC(LS(TAB)) &kp LC(TAB)   &kp LC(LS(PG_DN))       &trans
+                                                    &trans           &kp LC(LS(TAB))    &kp LC(LS(PG_UP)) &kp LC(LS(PG_DN)) &kp LC(TAB) &trans
                         >;
                 };
 
