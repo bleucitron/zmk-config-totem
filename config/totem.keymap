@@ -83,9 +83,9 @@ label= "BASE"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     S     ┃     D     ┃     F     ┃     G     ┃   ┃     H     ┃     J     ┃     K     ┃     L     ┃     ;     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     `     ┃
+// ┃    TAB    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃     \     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃     \     ┃   SPACE   ┃    ESC    ┃   ┃   ENTER   ┃    BSPC   ┃     `     ┃
+//                                     ┃     '     ┃   SPACE   ┃    ESC    ┃   ┃   ENTER   ┃    BSPC   ┃     `     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
  bindings = <
@@ -93,8 +93,8 @@ label= "BASE"                              ;
 
                   &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U          &kp I         &kp O         &kp P
                   &hml LSHFT A  &hml LCTRL S  &hml RALT D   &hml LGUI F   &kp G             &kp H         &hmr RGUI J    &hmr RALT K   &hmr RCTRL L  &hmr RSHFT SEMI
-    &mt LSHFT TAB &kp Z         &kp X         &lt MOV C     &kp V         &kp B             &kp N         &kp M          &kp COMMA     &lt NUM DOT   &kp FSLH      &mt RSHFT GRAVE
-                                              &lt SYS BSLH &mt LALT SPACE &mt LGUI ESC      &mt RSHFT ENTER &lt NUM BSPC &lt SYS GRAVE
+    &mt LSHFT TAB &kp Z         &kp X         &lt MOV C     &kp V         &kp B             &kp N         &kp M          &kp COMMA     &lt NUM DOT   &kp FSLH      &mt RSHFT BSLH
+                                              &lt SYS SQT   &mt LALT SPACE &mt LGUI ESC     &lt NUM ENTER &mt RALT BSPC  &lt SYS GRAVE
                         >;
                 };
 
