@@ -17,9 +17,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define NUM   1
-#define MOV   2
-#define SYS   3
+#define NUM  1
+#define MOV  2
+#define SYS  3
 
 &mt {
   quick-tap-ms = <300>;
@@ -91,10 +91,10 @@ label= "BASE"                              ;
  bindings = <
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷              ╷             ╷             ╷             ╷             ╷
 
-                  &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U          &kp I         &kp O         &kp P
-                  &hml LSHFT A  &hml LCTRL S  &hml RALT D   &hml LGUI F   &kp G             &kp H         &hmr RGUI J    &hmr RALT K   &hmr RCTRL L  &hmr RSHFT SEMI
-    &mt LSHFT TAB &kp Z         &kp X         &lt MOV C     &kp V         &kp B             &kp N         &kp M          &kp COMMA     &lt NUM DOT   &kp FSLH      &mt RSHFT BSLH
-                                              &lt SYS SQT   &mt LALT SPACE &mt LGUI ESC     &lt NUM ENTER &mt RALT BSPC  &lt SYS GRAVE
+                  &kp Q         &kp W         &mt LS(LC(LA)) E  &mt LS(LC(LA(LG))) R  &kp T               &kp Y  &mt RS(RC(RA(RG))) U  &mt RS(RC(RA)) I  &kp O  &kp P
+                  &hml LSHFT A  &hml LCTRL S  &hml LALT D   &hml LGUI F   &kp G             &kp H         &hmr RGUI J    &hmr RALT K   &hmr RCTRL L  &hmr RSHFT SEMI
+    &mt LSHFT TAB &kp Z         &kp X         &lt MOV C     &kp V         &lt SYS B         &lt SYS N     &kp M          &kp COMMA     &lt NUM DOT   &kp FSLH      &mt RSHFT BSLH
+                                              &mt LCTRL SQT   &mt RALT SPACE &mt LGUI ESC     &mt RSHFT ENTER &lt NUM BSPC &mt RCTRL GRAVE
                         >;
                 };
 
